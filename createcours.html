@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Créer un cours</title>
+    <!-- Import de Tailwind CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
+  </head>
+  <body class="bg-gray-100">
+    <div class="container mx-auto p-4">
+      <h1 class="text-2xl font-bold mb-4">Créer un cours</h1>
+      <form>
+        <div class="mb-4">
+          <label for="titre" class="block text-gray-700 font-bold mb-2">Titre :</label>
+          <input type="text" id="titre" name="titre" placeholder="Saisissez un titre" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="mb-4">
+          <label for="texte" class="block text-gray-700 font-bold mb-2">Texte :</label>
+          <textarea id="texte" name="texte" placeholder="Saisissez du texte" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"></textarea>
+        </div>
+        <div class="mb-4">
+          <label for="champ-texte" class="block text-gray-700 font-bold mb-2">Champ de texte :</label>
+          <input type="text" id="champ-texte" name="champ-texte" placeholder="Saisissez du texte" class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+        </div>
+        <div class="flex justify-end">
+          <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">Créer le cours</button>
+        </div>
+      </form>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.4.3/firebase-firestore.js"></script>
+    <script src="mon_script.js"></script>
+  </body>
+</html>
