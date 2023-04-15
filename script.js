@@ -17,7 +17,7 @@ for (let i = 0; i < items.length; i++) {
   gridContainer.appendChild(gridItem);
   
   gridItem.addEventListener('click', async () => {
-    const newUrl = `http://localhost:5173/courts/${items[i]}`;
+    const newUrl = `https://nausicaacours.netlify.app/courts/${items[i]}`;
     
     if (newUrl !== window.location.href) {
       try {
