@@ -1,12 +1,98 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" href="./NC (2).png">
+  <title>iCourts</title>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
 </head>
+<header aria-label="Site Header" class="bg-white">
+    <div class="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <div class="md:flex md:items-center md:gap-12">
+          <a class="block text-teal-600" href="/">
+            <span class="sr-only">Home</span>
+            <img src="./NC (1).gif" alt="nausicourts" class="h-12">
+          </a>
+        </div>
+  
+        <div class="">
+          <nav aria-label="Site Nav">
+            <ul class="flex items-center gap-6 text-sm">
+              <li>
+                <a
+                  class="text-gray-500 transition hover:text-gray-500/75"
+                  href="/"
+                >
+                  Home
+                </a>
+              </li>
+  
+              <li>
+                <a
+                  class="text-gray-500 transition hover:text-gray-500/75"
+                  href="/"
+                >
+                  Classes
+                </a>
+              </li>
+  
+              <li>
+                <a
+                  class="text-gray-500 transition hover:text-gray-500/75"
+                  href="/"
+                >
+                  create a court
+                </a>
+              </li>
+  
+              <li>
+                <a
+                  class="text-gray-500 transition hover:text-gray-500/75"
+                  href="/"
+                >
+                  pricing
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+  
+        <div class="flex items-center gap-4">
+          <div class="sm:flex sm:gap-4">
+            <a
+              class="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
+              href="/"
+            >
+              Login
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  
 <body>
-    <h1>hello<h1>
+  <div class="p-8">
+    <div class="content"></div>
+    <div class="grid-container"></div>
+    <script src="script.js"></script>
+
+
+  </div>
 </body>
 </html>
