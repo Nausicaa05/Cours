@@ -6,50 +6,7 @@
   </head>
   <body>
     <div class="content">
-      <h1>Vous êtes actuellement sur la page de <span id="subjectName"></span></h1>
-      <label for="subjectList">Sélectionnez une matière :</label>
-      <select id="subjectList"></select>
+      <h1>hello</h1>
     </div>
-
-    <script>
-      const subjectList = document.getElementById('subjectList');
-      const subjectName = document.getElementById('subjectName');
-      const items = [
-        "Mathématiques",
-        "Physique",
-        "Chimie",
-        "SVT",
-        "Histoire",
-        "Géographie",
-        "Français",
-        "Anglais",
-        "Allemand",
-        "Espagnol",
-        "Italien",
-        "Arts plastiques",
-        "Musique",
-        "EPS"
-      ];
-
-      items.forEach((subject) => {
-        const option = document.createElement('option');
-        option.textContent = subject;
-        subjectList.appendChild(option);
-      });
-
-      const urlParams = new URLSearchParams(window.location.search);
-      const selectedSubject = urlParams.get('matiere');
-      if (selectedSubject) {
-        subjectName.textContent = selectedSubject;
-        subjectList.value = selectedSubject;
-      }
-
-      subjectList.addEventListener('change', () => {
-        const selectedValue = subjectList.value;
-        subjectName.textContent = selectedValue;
-        const newUrl = `http://localhost:5173/courts.html?matiere=${selectedValue}`;
-        window.history.pushState({}, '', newUrl);
-      });
-    </script>
   </body>
 </html>
